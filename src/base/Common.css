@@ -1,0 +1,200 @@
+/*滚动条的宽度*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    z-index: 99999;
+}
+
+/*滚动条的滑块*/
+::-webkit-scrollbar-thumb {
+    background-color: #e0e3e5;
+    border-radius: 3px;
+    z-index: 99999;
+}
+
+/**===========================*/
+/*内容区左右样式*/
+.content-left-pane {
+    height: 100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+    padding-right: 5px;
+    /*margin-right: 6px;*/
+}
+.content-top-pane{
+    height:100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+
+.content-right-pane {
+    height: 100%;
+    width: 100%;
+    /*overflow-x: auto;*/
+    background-color: #FFFFFF;
+    /*padding-left: 5px;*/
+    margin-left: 2px;
+}
+
+/*===================*/
+/**
+   工具条的CSS设置
+ */
+.toolbar {
+    height: 35px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    padding-top: 4px;
+    border-bottom: 1px solid #F0F2F5;
+    border-top: 1px solid #F0F2F5;
+}
+.toolbar-selector {
+    height: 35px;
+    background-color: #FFFFFF;
+    /*padding-left: 10px;*/
+    padding-top: 4px;
+    border-bottom: 1px solid #F0F2F5;
+    /*border-top: 1px solid #F0F2F5;*/
+}
+
+/*==========table相关的样式修改============*/
+/**列表数据分页，设置分页器固定在底部，底部状态栏高40px
+ */
+.content-page {
+    position: fixed;
+    bottom: 40px;
+    margin: auto !important;
+    padding-left: 5px !important;
+    padding-top: 6px !important;
+    width: 100%;
+    height: 35px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+.modal-page{
+    margin-left: 5px!important;
+    margin-top: 10px!important;
+}
+
+/**
+    表格内容过宽，可以通过此CSS设置隐藏，之后进行鼠标移进入提示
+    EmployeeManager
+ */
+/*table {*/
+/*    table-layout: fixed;*/
+/*}*/
+
+.result-columns-div {
+    /*width:100%;*/
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*============树结构组件样式从新修改============*/
+/*菜单树间距太宽*/
+.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-sub.ant-menu-inline > .ant-menu-item,
+.ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 30px;
+    line-height: 30px;
+}
+
+/*中间部分tab页签整体header高度调整*/
+/*.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {*/
+/*    height: 34px !important;*/
+/*}*/
+
+/*单个tab页签header高度调整，与整体高度相差2px是边框*/
+/*.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {*/
+/*    line-height: 32px !important;*/
+/*}*/
+
+/**
+资讯内容CSS,NewsManager
+ */
+.ql-editor {
+    height: 88% !important;
+}
+
+/**
+对话框内的内容padding去掉
+ */
+.ant-modal-body {
+    padding: 5px 20px 5px 20px;
+}
+.ant-modal {
+    padding-bottom: 0px;
+}
+
+/*======Descriptions组件的样式=======*/
+
+.ant-descriptions {
+    padding-top: 10px;
+}
+
+.ant-descriptions-title {
+    font-size: 14px !important;
+    margin-bottom: 7px !important;
+}
+
+.ant-descriptions-item-label {
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.ant-descriptions-item-content {
+    font-size: 13px;
+}
+
+
+/*====表格的大小调整，表扩列======*/
+.red-column {
+    color: #FF0000;
+}
+
+.ant-table {
+    font-size: 13px !important;
+}
+
+/*.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {*/
+/*    padding: 6px 6px !important;*/
+/*}*/
+
+/*.ant-table-small tr.ant-table-expanded-row td > .ant-table-wrapper {*/
+/*    margin: -7px -6px -7px !important;*/
+/*}*/
+
+/*======首页统计维度的样式======*/
+.home-statistic:hover {
+    color: #FF0000;
+    cursor: pointer;
+}
+
+
+/*WaitWork*/
+.home-block {
+    background-color: #FFFFFF;
+}
+
+.home-row {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.wait-work {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 20px 0px;
+    box-shadow: darkgrey 2px 2px 10px 2px;
+    /*border-radius: 5px;*/
+}
+.ranking {
+    box-shadow: darkgrey 2px 2px 10px 2px;
+    border-radius: 5px;
+}
+

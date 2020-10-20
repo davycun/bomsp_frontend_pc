@@ -1,0 +1,40 @@
+.ant-layout-sider {
+    background-color: #61dafb;
+}
+
+.ant-menu {
+    overflow: auto;
+}
+.ant-menu-sub.ant-menu-inline{
+    overflow: hidden;
+}
+
+
+/*菜单顶部信息条*/
+.menu-top{
+    /*height: 40px;*/
+    line-height: 40px;
+    background-color: #F0F2F5;
+    /*background-color: #001529;*/
+    padding: 0 24px;
+}
+
+.menu-top > .trigger {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.menu-top > .trigger:hover {
+    color: #1890ff;
+}
+
+.menu-sider{
+    /*border-right: 5px solid #61dafb;*/
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    margin-right: 2px;
+    background-color: #FFFFFF;
+}
+.ant-menu-inline{
+    border-right: 0px;
+}
